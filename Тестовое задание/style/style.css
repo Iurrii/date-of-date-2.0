@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+
+
+:root {
+    /*colors*/
+    --white: #FFFFFF;
+    --gold: #F6C866;
+    --bg-color: #202024;
+    /*font-family*/
+    --roboto: 'Roboto', sans-serif;
+    --bad-script: 'Bad Script', cursive;
+}
+
+/*~~~~GENERAL_RULES_BEM~~~~*/
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    text-align: center;
+    font-family: var(--roboto);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.button {
+    position: relative;
+    background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
+    border-radius: 50px;
+    width: 179px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--white);
+}
+
+.b-button__i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+    width: 15%;
+    height: 100%;
+    transform: skew(45deg, 0deg);
+}
+
+.b-button__i--animation {
+    animation: button-amimation 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes button-amimation {
+    0% {
+        left: 15;
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0.0;
+    }
+
+    48% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 0.0;
+    }
+
+    100% {
+        left: 75%;
+    }
+}
+
+/*~~~~END_GENERAL_RULES_BEM~~~~*/
+
+
