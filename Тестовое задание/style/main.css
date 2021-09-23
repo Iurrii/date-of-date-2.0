@@ -3,6 +3,18 @@
 
 
 
+:root {
+   /*colors*/
+   --white: #FFFFFF;
+   --gold: #F6C866;
+   --bg-color: #202024;
+   /*font-family*/
+   --roboto: 'Roboto', sans-serif;
+   --bad-script: 'Bad Script', cursive;
+}
+
+
+
 .b-main-page__header {
    display: flex;
    min-width: 100vw;
@@ -23,7 +35,6 @@
    line-height: 14px;
    color: rgba(255, 255, 255, 0.6);
    font-family: var(--roboto);
-   font-style: normal;
 }
 
 .b-header__hr {
@@ -37,7 +48,6 @@
    margin: 0;
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
    font-weight: 300;
    font-size: 20px;
    line-height: 23px;
@@ -71,8 +81,8 @@
    margin: 0;
    margin-bottom: 4vh;
    font-family: var(--roboto);
-   font-style: normal;
    text-transform: uppercase;
+   text-align: center;
 }
 
 .b-h1__span-main-page {
@@ -81,7 +91,8 @@
    line-height: 25px;
    color: var(--gold);
    font-family: var(--roboto);
-   font-style: normal;
+   text-transform: none;
+   text-align: center;
 }
 
 
@@ -98,9 +109,6 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   font-family: var(--roboto);
-   font-style: normal;
-   font-weight: normal;
 }
 
 .b-section-one__h5 {
@@ -110,6 +118,8 @@
    letter-spacing: 0.1em;
    color: rgba(255, 255, 255, 0.6);
    margin: 0;
+   text-align: center;
+   font-family: var(--roboto);
 }
 
 
@@ -132,7 +142,6 @@
    z-index: 5;
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
    font-weight: normal;
 }
 
@@ -144,7 +153,6 @@
    color: var(--white);
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
 }
 
 .b-h3__span {
@@ -154,7 +162,6 @@
    color: var(--gold);
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
 }
 
 .b-section-two__img {
@@ -194,19 +201,19 @@
    box-sizing: border-box;
    max-width: 68%;
    font-family: 'Roboto';
-   font-style: normal;
    font-weight: 400;
    font-size: 16px;
    line-height: 25px;
+   text-align: center;
 }
 
 .b-h2__span--main-page {
-   font-family: 'Roboto';
-   font-style: normal;
+   font-family: var(--roboto);
    font-weight: 400;
    font-size: 20px;
    line-height: 25px;
-   color: #F6C866;
+   color: var(--gold);
+   text-align: center;
 }
 
 
@@ -218,6 +225,9 @@
 .b-main-page__section-four {
    margin-top: 10vh;
    padding-bottom: 2vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .b-section-four__h2 {
@@ -226,20 +236,18 @@
    text-transform: uppercase;
    color: var(--gold);
    font-family: var(--roboto);
-   font-style: normal;
    font-weight: normal;
    margin-bottom: 5vh;
 }
+
 
 .b-section-four__h5 {
    font-weight: 300;
    font-size: 12px;
    line-height: 14px;
-   text-align: center;
    letter-spacing: 0.1em;
    color: rgba(255, 255, 255, 0.6);
    font-family: var(--roboto);
-   font-style: normal;
    margin-top: 1vh;
 }
 
@@ -252,7 +260,6 @@
 .b-main-page__section-vife {
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
    font-weight: normal;
 }
 
@@ -263,7 +270,6 @@
    z-index: 5;
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
    font-weight: normal;
 }
 
@@ -285,9 +291,7 @@
    font-size: 20px;
    line-height: 28px;
    color: var(--white);
-   font-style: normal;
    font-weight: normal;
-   text-align: center;
    max-width: 73%;
    max-height: 15%;
    margin-top: 6vh;
@@ -336,7 +340,6 @@
 
 .b-footer__p {
    font-family: var(--roboto);
-   font-style: normal;
    font-weight: normal;
    font-size: 7px;
    line-height: 9px;
@@ -344,4 +347,5 @@
    text-transform: uppercase;
    color: #9D9D9D;
    margin: 0;
+   text-align: center;
 }

@@ -3,10 +3,21 @@
 
 
 
+:root {
+   /*colors*/
+   --white: #FFFFFF;
+   --gold: #F6C866;
+   --bg-color: #202024;
+   /*font-family*/
+   --roboto: 'Roboto', sans-serif;
+   --bad-script: 'Bad Script', cursive;
+}
+
+
+
 .b-call-page__header {
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
    font-weight: normal;
    display: flex;
    min-width: 100vw;
@@ -29,7 +40,6 @@
    height: 15vh;
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
 }
 
 .b-h2__span--call-page {
@@ -40,7 +50,6 @@
    color: #202024;
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
 }
 
 
@@ -67,7 +76,6 @@
    color: var(--white);
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
 }
 
 
@@ -101,7 +109,6 @@
    color: var(--gold);
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
 }
 
 .b-h1__span {
@@ -112,7 +119,6 @@
    line-height: 25px;
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
 }
 
 
@@ -140,7 +146,6 @@
    color: var(--white);
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
 }
 
 
@@ -171,7 +176,6 @@
    color: var(--gold);
    text-align: center;
    font-family: var(--roboto);
-   font-style: normal;
    font-weight: normal;
 }
 
@@ -193,7 +197,6 @@
 
 .b-footer__p {
    font-family: var(--roboto);
-   font-style: normal;
    font-weight: normal;
    font-size: 7px;
    line-height: 9px;
@@ -201,4 +204,5 @@
    text-transform: uppercase;
    color: #9D9D9D;
    margin: 0;
+   text-align: center;
 }

@@ -31,8 +31,6 @@ main {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
-    text-align: center;
-    font-family: var(--roboto);
     font-style: normal;
     font-weight: normal;
 }
@@ -49,6 +47,10 @@ main {
     font-size: 14px;
     line-height: 16px;
     color: var(--white);
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-family: var(--roboto);
 }
 
 .b-button__i {
@@ -92,5 +94,3 @@ main {
 }
 
 /*~~~~END_GENERAL_RULES_BEM~~~~*/
-
-
