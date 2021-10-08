@@ -85,7 +85,7 @@ main {
    }
 }
 
-
+/*сделать точку на 650px*/
 /*<576 px // ≥576 px // ≥768 px // ≥992 px // ≥1200*/
 /*~~~~END_GENERAL_RULES_BEM~~~~*/
 
@@ -101,11 +101,13 @@ main {
    text-align: center;
    font-family: var(--roboto);
    font-weight: normal;
+   font-style: normal;
    display: flex;
-   min-width: 100vw;
+   width: 100vw;
    flex-direction: column;
    justify-content: flex-start;
    align-items: center;
+   padding-top: 6vh;
 }
 
 .b-header__h2 {
@@ -116,11 +118,7 @@ main {
    color: #202024;
    background-color: var(--white);
    border-radius: 5px;
-   margin-top: 6vh;
-   padding-top: 2vh;
-   padding-left: 2vw;
-   padding-right: 2vw;
-   padding-bottom: 2vh;
+   padding: 2vh 2vw;
    width: 81vw;
    height: auto;
    text-align: center;
@@ -140,11 +138,39 @@ main {
 @media (min-width:576px) {
    .b-header__h2 {
       width: 60vw;
-      padding-left: 1vw;
-      padding-right: 1vw;
+      padding: 2vh 1vw;
    }
 }
 
+@media (min-width:768px) {
+   .b-header__h2{
+      padding: 2vh 6vw;
+      font-size: 18px;
+      line-height: 22px;
+   }
+   .b-h2__span--call-page {
+      font-size: 18px;
+      line-height: 28px; 
+   }
+}
+
+@media (min-width: 992px) {
+   .b-call-page__header {
+      padding-top: 2vh;
+
+   }
+   .b-header__h2 {
+      font-size: 22px;
+      line-height: 28px;
+      padding: 2vh 2vw;
+      width: 90vw;
+      margin: 0;
+   }
+   .b-h2__span--call-page {
+      font-size: 20px;
+      line-height: 26px;
+   }
+}
 
 
 /*~~~~SECTION-ONE~~~~*/
@@ -155,8 +181,7 @@ main {
    width: auto;
    margin-top: 3vh;
    margin-bottom: 5vh;
-   padding-left: 20vw;
-   padding-right: 20vw;
+   padding: 0 20vw;
    display: flex;
    position: relative;
    flex-direction: column;
@@ -176,8 +201,19 @@ main {
 
 @media (min-width:576px) {
    .b-call-page__section-one {
-      padding-left: 5vw;
-      padding-right: 5vw;
+      padding: 0 5vw;
+   }
+}
+
+@media (min-width:768px) {
+   .b-section-one__h3 {
+      font-size: 18px;   
+   }   
+}
+
+@media (min-width:992px) {
+   .b-section-one__h3 {
+      font-size: 20px;
    }
 }
 
@@ -188,21 +224,19 @@ main {
 .b-call-page__section-two {
    display: flex;
    margin-bottom: 6vh;
-   padding-top: 5vh;
-   padding-bottom: 5vh;
+   padding: 5vh 1vw;
    width: 80vw;
    height: auto;
    align-items: center;
    justify-content: center;
    border: 1px solid var(--white);
    border-radius: 3px;
-   max-width: 80vw;
 }
 
 .b-section-two__h1 {
-   display: inline-block;
+   display: block;
    margin: 0;
-   max-width: 73vw;
+   width: 73vw;
    font-size: 16px;
    line-height: 25px;
    text-transform: uppercase;
@@ -227,6 +261,36 @@ main {
       width: 50vw;
 
    } 
+}
+
+@media (min-width:768px) {
+   .b-call-page__section-two {
+      width: 30vw;
+      padding: 5vh 4vw;
+   }
+   .b-section-two__h1 {
+   font-size: 20px;
+   line-height: 25px;
+   }
+   .b-h1__span {
+   font-size: 20px;
+   line-height: 28px;  
+   } 
+}
+
+@media (min-width:992px) {
+   .b-call-page__section-two {
+      width: 30vw;
+      margin-bottom: 2vh;
+   }
+   .b-section-two__h1 {
+      font-size: 22px;
+      line-height: 30px;
+   }
+   .b-h1__span {
+      font-size: 20px;
+      line-height: 24px;
+   }
 }
 
 
@@ -267,8 +331,30 @@ main {
 @media (min-width:576px) {
    .b-call-page__section-three{
       width: 90vw;
-      padding-left: 5vw;
-      padding-right: 5vw;
+      padding: 0 5vw 3vh;
+   }
+}
+
+@media (min-width:768px) {
+   .b-section-three__h3 {
+      font-size: 18px;
+   }
+   .b-button--call {
+      font-size: 20px;
+      line-height: 16px;     
+   }
+}
+
+@media (min-width:992px) {
+   .b-section-three__h3 {
+      font-size: 20px;
+      margin-bottom: 10vh;
+   }
+
+   .b-button--call {
+      font-size: 22px;
+      width: 350.0px;
+      height: 70px;
    }
 }
 
@@ -302,9 +388,8 @@ main {
 .b-call-page__footer {
    display: flex;
    width: 92vw;
-   min-height: 20px;
+   min-height: auto;
    margin: auto;
-   /* margin-top: auto; */
    flex-direction: column;
    justify-content: flex-end;
 }
@@ -325,4 +410,20 @@ main {
    .b-call-page__footer {
       width: 95vw;
    }
+}
+
+@media (min-width:768px) {
+   .b-call-page__footer {
+      margin-bottom: 1vh;
+   }
+   .b-footer__p {
+      font-size: 10px;
+      line-height: 15px;
+   }
+}
+
+@media (min-width:992px) {
+   .b-call-page__footer {
+      width: 98vw;
+   }      
 }
