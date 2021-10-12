@@ -10,7 +10,6 @@ let HTML = {
 };
 
 
-
 window.onload = () => {
     checkedButtonCall()
 };
@@ -18,22 +17,27 @@ window.onload = () => {
 
 
 function checkedButtonCall() {
-    if (document.querySelector('.b-button--call')) {
-        let buttonCall = document.querySelector('.b-button--call');
+    let buttonCall = document.querySelector('.b-button--call');
+    if (buttonCall) {
         buttonCall.onclick = () => {
-            callToAPI()
+            callToAPI();
         }
     }
 };
 
 function callToAPI() {
-    fetch('https://swapi.dev/api/people/1/')
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        getInfoToHTML(data);
-    });    
+    try {
+        fetch('https://swapi.dev/api/people/1/')
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                getInfoToHTML(data);
+            });
+    }
+    catch {
+        console.log('ошибка API ответа');
+    }
 }
 
 function getInfoToHTML(dataFromApi) {
@@ -44,5 +48,5 @@ function getInfoToHTML(dataFromApi) {
     HTML.skin_color.innerHTML = `Цвет кожи: ${dataFromApi.skin_color}`;
     HTML.eye_color.innerHTML = `Цвет глаз: ${dataFromApi.eye_color}`;
     HTML.birth_year.innerHTML = `Дата рождения: ${dataFromApi.birth_year}`;
-    HTML.gender.innerHTML = `Пол: ${ dataFromApi.gender }`;
+    HTML.gender.innerHTML = `Пол: ${dataFromApi.gender}`;
 }
